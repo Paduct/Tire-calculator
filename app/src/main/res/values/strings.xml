@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Tire Calculator</string>
+    <string name="current_size_label">Current size</string>
+    <string name="speed_index_label">Speed index</string>
+    <string name="new_size_label">New size</string>
+    <string name="tire_width_label">Tire width (mm)</string>
+    <string name="aspect_ration_label">Aspect ration (%)</string>
+    <string name="rim_diameter_label">Rim diameter (inch)</string>
+    <string name="load_index_label">Load index</string>
+    <string name="save_data_menu_label">Save results</string>
+    <string name="about_menu_label">About</string>
+    <string name="about_description">Simple application for calculating parameters of car tires</string>
+    <string name="about_version">Version</string>
+    <string name="about_source_web" translatable="false">https://www.github.com/Paduct/TireCalculator</string>
+    <string name="about_license_web" translatable="false">GNU General Public License\nhttp://www.gnu.org/licenses/</string>
+    <string name="average_value">*average value</string>
+    <string name="current_label">Current</string>
+    <string name="new_label">New</string>
+    <string name="differ_label">Difference</string>
+    <string name="sidewall_height">Sidewall height (mm)</string>
+    <string name="rim_width">*Rim width (inch)</string>
+    <string name="overall_diameter">Overall diameter (mm)</string>
+    <string name="rim_diameter">Rim diameter (mm)</string>
+    <string name="circumference">Circumference (mm)</string>
+    <string name="revs_per_km">Revs per km</string>
+    <string name="rpm_at_100">RPM at 100 km/h</string>
+    <string name="contact_area">*Contact area (cm2)</string>
+    <string name="max_load">Max load (kg)</string>
+    <string name="max_speed">Max speed (km/h)</string>
+    <string name="clearance">Clearance (mm)</string>
+    <string name="n_a">n/a</string>
+    <string name="save_results_dialog">Save data on storage?</string>
+    <string name="saved_toast">Saved</string>
+    <string name="about_source_code">Source code:</string>
+    <string name="about_license">License:</string>
+    <string name="about_version_num" translatable="false">1.1</string>
+    <string name="tab2_title">Results</string>
+    <string name="tab1_title">Tire Size</string>
+    <string name="save_permission_denied_toast">Failed to save: Permission denied</string>
+    <string name="failed_mkdir_toast">Failed to mkdir: </string>
+</resources>

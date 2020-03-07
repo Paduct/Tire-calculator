@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Шинный калькулятор</string>
+    <string name="about_menu_label">О приложении</string>
+    <string name="about_description">Приложение предназначено для расчета параметров автомобильных шин</string>
+    <string name="aspect_ration_label">Высота профиля (%)</string>
+    <string name="average_value">*среднее значение</string>
+    <string name="circumference">Окружность (мм)</string>
+    <string name="clearance">Клиренс (мм)</string>
+    <string name="contact_area">*Пятно контакта (см2)</string>
+    <string name="differ_label">Разница</string>
+    <string name="load_index_label">Индекс нагрузки</string>
+    <string name="max_load">Макс. нагрузка (кг)</string>
+    <string name="max_speed">Макс. скорость (км/ч)</string>
+    <string name="n_a">н/д</string>
+    <string name="new_size_label">Новый</string>
+    <string name="new_label">Новый</string>
+    <string name="current_label">Текущий</string>
+    <string name="current_size_label">Текущий</string>
+    <string name="overall_diameter">Общий диаметр (мм)</string>
+    <string name="revs_per_km">Оборотов на км</string>
+    <string name="rim_diameter">Диаметр обода (мм)</string>
+    <string name="rim_diameter_label">Диаметр обода (дюйм)</string>
+    <string name="rim_width">*Ширина обода (дюйм)</string>
+    <string name="rpm_at_100">Об/мин на 100 км/ч</string>
+    <string name="save_data_menu_label">Сохранить результаты</string>
+    <string name="sidewall_height">Высота профиля (мм)</string>
+    <string name="speed_index_label">Индекс скорости</string>
+    <string name="tire_width_label">Ширина шины (мм)</string>
+    <string name="save_results_dialog">Сохранить результаты?</string>
+    <string name="saved_toast">Сохранено</string>
+    <string name="about_version">Версия</string>
+    <string name="about_license">Лицензия:</string>
+    <string name="about_source_code">Исходный код:</string>
+    <string name="tab1_title">Размер шин</string>
+    <string name="tab2_title">Результаты</string>
+    <string name="failed_mkdir_toast">"Не удалось создать директорию: "</string>
+    <string name="save_permission_denied_toast">Не удалось сохранить: Доступ запрещен</string>
+</resources>
