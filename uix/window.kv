@@ -1,0 +1,310 @@
+<RLabel@Label>:
+    text_size: (self.width, None)
+    bold: True
+    text: '0.0'
+
+
+<DLabel@Label>:
+    size_hint_y: 0.18
+    text_size: (self.width, None)
+
+
+<SLabel@Label>:
+    size_hint_y: 0.1
+
+
+<DSpinner@Spinner>:
+    size_hint_y: None
+    height: 50
+
+
+<ALayout@AnchorLayout>:
+    size_hint_y: 0.18
+
+
+<MenuBar@ActionGroup>:
+    ActionButton:
+        text: 'Save'
+        on_press: Factory.PathChooser().open()
+
+
+<RootWindow@BoxLayout>:
+    spacing: 10
+    padding: 10
+    orientation: 'vertical'
+
+    PanelBar
+
+    BoxLayout:
+        spacing: 20
+
+        GridLayout:
+            cols_minimum: {0: 70}
+            size_hint: (0.4, 1)
+            cols: 3
+            spacing: 10
+
+            SLabel:
+                id: save_status
+                color: (0, 1, 0, 1)
+
+            SLabel:
+                text: app.calculator.OLD_HINT_TEXT
+
+            SLabel:
+                text: app.calculator.NEW_HINT_TEXT
+
+            DLabel:
+                text: app.TIRE_WIDTH_STR
+
+            ALayout:
+                DSpinner:
+                    id: tire_width_old
+                    text: app.calculator.OLD_VALUE_DEFAULT[0:3]
+                    values: app.calculator.TIRE_WIDTHS
+                    on_text: app.calculate_parameters()
+
+            ALayout:
+                DSpinner:
+                    id: tire_width_new
+                    text: app.calculator.NEW_VALUE_DEFAULT[0:3]
+                    values: app.calculator.TIRE_WIDTHS
+                    on_text: app.calculate_parameters()
+
+            DLabel:
+                text: app.ASPECT_RATION_STR
+
+            ALayout:
+                DSpinner:
+                    id: aspect_ration_old
+                    text: app.calculator.OLD_VALUE_DEFAULT[4:6]
+                    values: app.calculator.ASPECT_RATIOS
+                    on_text: app.calculate_parameters()
+
+            ALayout:
+                DSpinner:
+                    id: aspect_ration_new
+                    text: app.calculator.NEW_VALUE_DEFAULT[4:6]
+                    values: app.calculator.ASPECT_RATIOS
+                    on_text: app.calculate_parameters()
+
+            DLabel:
+                text: app.RIM_DIAMETER_STR
+
+            ALayout:
+                DSpinner:
+                    id: diameter_rim_old
+                    text: app.calculator.OLD_VALUE_DEFAULT[8:10]
+                    values: app.calculator.RIM_DIAMETERS
+                    on_text: app.calculate_parameters()
+
+            ALayout:
+                DSpinner:
+                    id: diameter_rim_new
+                    text: app.calculator.NEW_VALUE_DEFAULT[8:10]
+                    values: app.calculator.RIM_DIAMETERS
+                    on_text: app.calculate_parameters()
+
+            DLabel:
+                text: app.LOAD_INDEX_STR
+
+            ALayout:
+                DSpinner:
+                    id: load_index_old
+                    text: app.calculator.OLD_VALUE_DEFAULT[11:-1]
+                    values: app.calculator.LOAD_INDEXES
+                    on_text: app.calculate_parameters()
+
+            ALayout:
+                DSpinner:
+                    id: load_index_new
+                    text: app.calculator.NEW_VALUE_DEFAULT[11:-1]
+                    values: app.calculator.LOAD_INDEXES
+                    on_text: app.calculate_parameters()
+
+            DLabel:
+                text: app.SPEED_INDEX_STR
+
+            ALayout:
+                DSpinner:
+                    id: speed_index_old
+                    text: app.calculator.OLD_VALUE_DEFAULT[-1]
+                    values: app.calculator.SPEED_INDEXES
+                    on_text: app.calculate_parameters()
+
+            ALayout:
+                DSpinner:
+                    id: speed_index_new
+                    text: app.calculator.NEW_VALUE_DEFAULT[-1]
+                    values: app.calculator.SPEED_INDEXES
+                    on_text: app.calculate_parameters()
+
+        VSeparatorLine
+
+        GridLayout:
+            cols_minimum: {0: 100}
+            size_hint: (0.6, 1)
+            cols: 4
+            spacing: 10
+
+            RLabel:
+                color: (1, 1, 0, 1)
+                text: app.calculator.AVERAGE_VALUE_STR
+                bold: False
+
+            RLabel:
+                text: app.calculator.OLD_HINT_TEXT
+                bold: False
+
+            RLabel:
+                text: app.calculator.NEW_HINT_TEXT
+                bold: False
+
+            RLabel:
+                text: app.calculator.DIFFER_STR
+                bold: False
+
+            RLabel:
+                text: app.calculator.SIDEWALL_HEIGHT_STR
+                bold: False
+
+            RLabel:
+                id: sidewall_height_old
+
+            RLabel:
+                id: sidewall_height_new
+
+            RLabel:
+                id: sidewall_height_dif
+
+            RLabel:
+                text: app.calculator.RIM_WIDTH_STR
+                bold: False
+
+            RLabel:
+                id: rim_width_old
+
+            RLabel:
+                id: rim_width_new
+
+            RLabel:
+                id: rim_width_dif
+
+            RLabel:
+                text: app.calculator.OVERALL_DIAMETER_STR
+                bold: False
+
+            RLabel:
+                id: overall_diameter_old
+
+            RLabel:
+                id: overall_diameter_new
+
+            RLabel:
+                id: overall_diameter_dif
+
+            RLabel:
+                text: app.calculator.RIM_DIAMETER_STR
+                bold: False
+
+            RLabel:
+                id: rim_diameter_old
+
+            RLabel:
+                id: rim_diameter_new
+
+            RLabel:
+                id: rim_diameter_dif
+
+            RLabel:
+                text: app.calculator.CIRCUMFERENCE_STR
+                bold: False
+
+            RLabel:
+                id: circumference_old
+
+            RLabel:
+                id: circumference_new
+
+            RLabel:
+                id: circumference_dif
+
+            RLabel:
+                text: app.calculator.REVS_PER_KM_STR
+                bold: False
+
+            RLabel:
+                id: revs_per_km_old
+
+            RLabel:
+                id: revs_per_km_new
+
+            RLabel:
+                id: revs_per_km_dif
+
+            RLabel:
+                text: app.calculator.RPM_AT_100_STR
+                bold: False
+
+            RLabel:
+                id: rpm_hundred_old
+
+            RLabel:
+                id: rpm_hundred_new
+
+            RLabel:
+                id: rpm_hundred_dif
+
+            RLabel:
+                text: app.calculator.CONTACT_AREA_STR
+                bold: False
+
+            RLabel:
+                id: contact_area_old
+
+            RLabel:
+                id: contact_area_new
+
+            RLabel:
+                id: contact_area_dif
+
+            RLabel:
+                text: app.calculator.MAX_LOAD_STR
+                bold: False
+
+            RLabel:
+                id: max_load_old
+
+            RLabel:
+                id: max_load_new
+
+            RLabel:
+                id: max_load_dif
+
+            RLabel:
+                text: app.calculator.MAX_SPEED_STR
+                bold: False
+
+            RLabel:
+                id: max_speed_old
+
+            RLabel:
+                id: max_speed_new
+
+            RLabel:
+                id: max_speed_dif
+
+            RLabel:
+                text: app.calculator.CLEARANCE_STR
+                bold: False
+
+            RLabel:
+                color: (0, 0, 1, 1)
+                text: app.calculator.NOT_APPLICABLE_STR
+
+            RLabel:
+                color: (0, 0, 1, 1)
+                text: app.calculator.NOT_APPLICABLE_STR
+
+            RLabel:
+                id: clearance_dif
